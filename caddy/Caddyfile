@@ -1,0 +1,8 @@
+trimtab.online, www.trimtab.online {
+	root * /srv/landing
+	file_server
+}
+
+app.trimtab.online {
+	reverse_proxy app:3000
+}
